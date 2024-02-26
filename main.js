@@ -28,7 +28,7 @@ import { styles } from './assets.js';
       <ul class="chatbox">
         <li class="chat incoming">
           <span class="material-symbols-outlined" style="background:${config.chatbotColor};  width: 32px; height: 32px;">smart_toy</span>
-          <p>${config.welcomeMessage}</p>
+          <p style="margin: 20px 0; justify-content: flex-end;">${config.welcomeMessage}</p>
         </li>
       </ul>
       <div class="chat-input" >      
