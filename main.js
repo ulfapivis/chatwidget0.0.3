@@ -27,7 +27,7 @@ import { styles } from './assets.js';
       </header>
       <ul class="chatbox">
         <li class="chat incoming">
-          <span class="material-symbols-outlined" style="background:${config.chatbotColor};">smart_toy</span>
+          <span class="material-symbols-outlined" style="background:${config.chatbotColor};  width: 32px; height: 32px;">smart_toy</span>
           <p>${config.welcomeMessage}</p>
         </li>
       </ul>
@@ -75,7 +75,7 @@ const createChatLi = (message, className, imgSrc) => {
   const chatLi = document.createElement("li");
   chatLi.classList.add("chat", `${className}`);
 
-  let chatContent = className === "outgoing" ? `<div class="message-container" style="background:${config.chatbotColor}; border-radius: 10px 10px 0 10px;  white-space: pre-wrap;  padding: 16px 25px;"><p class="message-text"></p></div><br>` : `<span class="material-symbols-outlined" style="background:${config.chatbotColor};">smart_toy</span><div class="message-container" ><p class="message-text"></p></div>`;
+  let chatContent = className === "outgoing" ? `<div class="message-container" style="background:${config.chatbotColor}; border-radius: 10px 10px 0 10px;  white-space: pre-wrap;  padding: 16px 25px;"><p class="message-text"></p></div><br>` : `<span class="material-symbols-outlined" style="background:${config.chatbotColor}; width: 32px; height: 32px;">smart_toy</span><div class="message-container"><p class="message-text" style="white-space: pre-wrap; padding: 16px 25px; border-radius: 10px 10px 0 10px; max-width: 80%;"></p></div>`;
 
   if(imgSrc) {
     chatContent += `<div class="image-container"><img class="chat-image" src="${imgSrc}" alt="Uploaded image"/></div>`;
