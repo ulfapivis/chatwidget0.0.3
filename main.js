@@ -27,8 +27,8 @@ import { styles } from './assets.js';
       </header>
       <ul class="chatbox">
         <li class="chat incoming">
-          <span class="material-symbols-outlined" style="background:${config.chatbotColor};  width: 32px; height: 32px;">smart_toy</span>
-          <p style="margin: 20px 0; justify-content: flex-end;">${config.welcomeMessage}</p>
+          <span class="material-symbols-outlined" style="background:${config.chatbotColor};  width: 35px; height: 35px; cursor: default; line-height: 36px; align-self: flex-end; border-radius: 4px; margin: 0 10px 7px 0;">smart_toy</span>
+          <p>${config.welcomeMessage}</p>
         </li>
       </ul>
       <div class="chat-input" >      
@@ -75,7 +75,7 @@ const createChatLi = (message, className, imgSrc) => {
   const chatLi = document.createElement("li");
   chatLi.classList.add("chat", `${className}`);
 
-  let chatContent = className === "outgoing" ? `<div class="message-container" style="background:${config.chatbotColor}; "><p class="message-text"></p></div><br>` : `<span class="material-symbols-outlined" style="background:${config.chatbotColor}; width: 32px; height: 32px;">smart_toy</span><div class="message-container"><p class="message-text" border-radius: 10px 10px 0 10px;  white-space: pre-wrap;  padding: 16px 25px;"></p></div>`;
+  let chatContent = className === "outgoing" ? `<div class="message-container" style="background:${config.chatbotColor}; border-radius: 10px 10px 0 10px;"><p class="message-text"></p></div><br>` : `<span class="material-symbols-outlined" style="background:${config.chatbotColor}; width: 35px; height: 35px; cursor: default; line-height: 36px; align-self: flex-end; border-radius: 4px; margin: 0 10px 7px 0;">smart_toy</span><div class="message-container" ><p class="message-text"></p></div>`;
 
   if(imgSrc) {
     chatContent += `<div class="image-container"><img class="chat-image" src="${imgSrc}" alt="Uploaded image"/></div>`;

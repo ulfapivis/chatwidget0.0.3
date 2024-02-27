@@ -126,9 +126,9 @@ header h2 {
   // background: #724ae8;
 }
 .chatbox .incoming p {
-  border-radius: 10px 10px 10px 0; /* colour of the avatar */
-  padding: 12px 16px;
-  width: 320px;
+  border-radius: 5px 10px 10px 0; /* colour of the avatar */
+  padding: 2px 2px;
+  width: 310px;
 }
 .chatbox .chat p.error {
   color: #721c24;
@@ -141,12 +141,11 @@ header h2 {
 }
 .chatbot .chat-input {
   display: flex; 
-  gap: 10px;
   position: absolute;
   bottom: 0;
   width: 100%;
   background: #fff;
-  padding: 30px 20px;
+  padding: 3px 12px 38px 20px;
   border-top: 1px solid #ddd;
 }
 .chat-input textarea {
@@ -163,7 +162,7 @@ header h2 {
   align-self: flex-end;
   // color: #724ae8;
   cursor: pointer;
-  height: 55px;
+  height: 50px;
   display: flex;
   align-items: center;
   visibility: hidden;
@@ -212,8 +211,9 @@ header h2 {
   justify-content: center;
   align-items: center; /* Add this */
   font-size: 0.8em;
+  padding: 5px 5px 5px;
   text-align: center;
-  height: 35px;
+  height: 50px;
 }
 
 .footer a {
